@@ -56,13 +56,15 @@ void init_target_properties()
         property_override("ro.build.fingerprint", "samsung/trltexx/trlte:6.0.1/MMB29M/N910FXXS1DQH9:user/release-keys");
         property_override("ro.build.description", "trltexx-user 6.0.1 MMB29M N910FXXS1DQH9 release-keys");
         property_override("ro.product.model", "SM-N910F");
-        property_override("ro.product.device", "trltexx");
+        property_override("ro.product.device", "trlte");
+        property_override("ro.product.name", "trltexx");
         gsm_properties();
     } else if (bootloader.find("N910G") == 0) {
         property_override("ro.build.fingerprint", "samsung/trltedt/trlte:6.0.1/MMB29M/N910GDTS1DQH3:user/release-keys");
         property_override("ro.build.description", "trltedt-user 6.0.1 MMB29M N910GDTS1DQH3 release-keys");
         property_override("ro.product.model", "SM-N910G");
-        property_override("ro.product.device", "trltedt");
+        property_override("ro.product.device", "trlte");
+        property_override("ro.product.name", "trltedt");
         gsm_properties();
     } else {
         ERROR("Setting product info FAILED\n");
